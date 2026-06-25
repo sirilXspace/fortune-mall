@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Mall</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="images/logo-img.png" alt="Fortune Group">
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+            <nav class="nav-menu" id="nav-menu">
+                <button class="close-menu" id="close-menu">&times;</button>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section class="hero-section">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="slide-bg" style="background-image: url('images/banner-img.png');"></div>
+                        <div class="slide-content container">
+                            <div class="hero-text">
+                                <h4>WHERE SHOPPING MEETS</h4>
+                                <h1>LIFESTYLE</h1>
+                                <p>Discover The Finest Brands, Delicious Dining, Exciting Entertainment, And
+                                    Unforgettable Experiences—All Under One Roof.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="slide-bg" style="background-image: url('images/banner-img.png');"></div>
+                        <div class="slide-content container">
+                            <div class="hero-text">
+                                <h4>WHERE ENTERTAINMENT MEETS</h4>
+                                <h1>FUN</h1>
+                                <p>Experience the most thrilling moments with family and friends at our premier
+                                    destination.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="slide-bg" style="background-image: url('images/banner-img.png');"></div>
+                        <div class="slide-content container">
+                            <div class="hero-text">
+                                <h4>WHERE DINING MEETS</h4>
+                                <h1>FLAVOR</h1>
+                                <p>Savor the best cuisines from around the world at our food courts and premium
+                                    restaurants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Navigation -->
+                <div class="container slider-controls-container">
+                    <div class="slider-controls">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Features Section -->
+            <div class="features-bar">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/icon-sm-01.png" alt="V-ZAC Hyper Market">
+                        </div>
+                        <div class="feature-info">
+                            <h3>V-ZAC</h3>
+                            <p>Hyper Market</p>
+                        </div>
+                    </div>
+                    <div class="feature-divider"></div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/icon-sm-02.png" alt="Food Court">
+                        </div>
+                        <div class="feature-info">
+                            <h3>Food Court</h3>
+                            <p>Veg / non Veg</p>
+                        </div>
+                    </div>
+                    <div class="feature-divider"></div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/icon-sm-03.png" alt="Movie Max">
+                        </div>
+                        <div class="feature-info">
+                            <h3>Movie Max</h3>
+                            <p>Multiplex</p>
+                        </div>
+                    </div>
+                    <div class="feature-divider"></div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="images/icon-sm-04.png" alt="Mini Shops">
+                        </div>
+                        <div class="feature-info">
+                            <h3>Mini Shops</h3>
+                            <p>And More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
