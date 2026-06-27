@@ -3,17 +3,13 @@
         font-size: 16px;
     }
 
-    .co-founder-name h2 {
-        font-size: 40px;
-    }
-
     .co-founder-name span {
         font-size: 18px;
     }
 
     .default-heading {
         font-size: 40px;
-        line-height:40px;
+        line-height: 40px;
     }
 
     .board-member-card h4 {
@@ -26,6 +22,11 @@
 
     .hero-text h1 {
         font-size: 100px;
+    }
+
+    .team-header p,
+    .team-info span {
+        font-size: 18px;
     }
 }
 
@@ -40,7 +41,7 @@
 
     .stat-box h3 {
         font-size: 30px;
-        line-height:30px;
+        line-height: 30px;
     }
 
     .section-title {
@@ -163,13 +164,51 @@
         margin-bottom: 15px;
     }
 
-    .co-founder-name h2 {
-        font-size: 32px;
+    .board-members-section {
+        margin-top: 30px;
     }
-    .board-members-section{margin-top:30px;}
-    .default-heading{font-size:28px;line-height:28px;}
-    .board-members-header{margin-bottom:30px;}
-    .board-member-card h4{font-size:17px;}
+
+    .default-heading {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .board-members-header {
+        margin-bottom: 30px;
+    }
+
+    .board-member-card h4 {
+        font-size: 17px;
+    }
+
+    .team-header {
+        margin-bottom: 30px;
+    }
+
+    .team-header p {
+        font-size: 14px;
+    }
+
+    .team-img {
+        margin-bottom: 15px;
+    }
+
+    .team-info {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .team-info h4 {
+        font-size: 17px;
+    }
+
+    .team-info span {
+        font-size: 14px;
+    }
+
+    .team-swiper-pagination {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -221,9 +260,9 @@
         display: none;
     }
 
-    .logo img {
+    /* .logo img {
         height: 50px;
-    }
+    } */
 
     .slider-controls {
         gap: 10px
@@ -282,11 +321,6 @@
         max-width: 100%;
     }
 
-    .co-founder-name h2 {
-        font-size: 26px;
-        line-height: 1.3;
-    }
-
     .custompad {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -295,7 +329,36 @@
     .co-founder-name {
         margin-top: 10px;
     }
-    .default-heading{font-size:22px;line-height:22px;}
+
+    .default-heading {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .team-img {
+        margin-bottom: 0px;
+    }
+
+    .board-member-card img {
+        margin-bottom: 15px;
+    }
+
+    .board-member-card h4 {
+        font-size: 15px;
+    }
+
+    .team-info h4 {
+        font-size: 15px;
+    }
+
+    .team-info {
+        padding-bottom: 15px;
+    }
+    .co-founder-name span{font-size:15px;}
+    .co-founder-row{gap:15px;}
+    .co-founder-text .desc-text p{margin-bottom:10px;}
+    .board-members-section{margin-top:20px;}
+    .team-swiper-pagination{margin-top:15px;}
 }
 
 @media (max-width: 480px) {
@@ -329,7 +392,7 @@
 
     .stat-box h3 {
         font-size: 26px;
-        line-height:26px;
+        line-height: 26px;
     }
 
     .stat-box {

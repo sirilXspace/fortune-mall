@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const boardSwiper = new Swiper('.board-members-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 10,
             pagination: {
                 el: '.board-swiper-pagination',
                 clickable: true,
@@ -86,6 +86,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     slidesPerView: 4,
                     spaceBetween: 30,
                 },
+            }
+        });
+
+        const teamSwiper = new Swiper('.team-swiper', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: {
+                el: '.team-swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                }
             }
         });
     }

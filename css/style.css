@@ -48,7 +48,7 @@ ul {
     line-height: 50px;
     font-weight: 600;
     font-family: var(--font-heading);
-    padding-left:15px;
+    padding-left: 15px;
 }
 
 /* Header Styles */
@@ -71,9 +71,9 @@ ul {
     width: 96%;
 }
 
-.logo img {
+/* .logo img {
     height: 80px;
-}
+} */
 
 .nav-menu ul {
     display: flex;
@@ -273,7 +273,7 @@ ul {
     z-index: 20;
     border: 1px solid #777777;
     backdrop-filter: blur(15px);
-    width:96%;
+    width: 96%;
 }
 
 .features-grid {
@@ -406,7 +406,7 @@ ul {
 
 .stat-box h3 {
     font-size: 40px;
-    line-height:40px;
+    line-height: 40px;
     font-weight: 600;
     color: #111;
     margin-bottom: 10px;
@@ -477,6 +477,7 @@ ul {
 .co-founder-name h2 {
     color: #4b5e28;
     margin-bottom: 5px;
+    padding-left: 0px;
 }
 
 .co-founder-name span {
@@ -509,8 +510,8 @@ ul {
     background-color: #5F672C;
     /* margin-right: 15px; */
     position: absolute;
-    height:100%;
-    left:0px;
+    height: 100%;
+    left: 0px;
 }
 
 .board-swiper-pagination {
@@ -552,4 +553,90 @@ ul {
     font-weight: 500;
     color: #333;
     font-family: var(--font-heading);
+}
+
+/* Team Section */
+.team-section {
+    background-color: #ffffff;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-header h2 {
+    margin-bottom: 15px;
+    font-family: var(--font-heading);
+}
+
+.team-header p {
+    color: rgba(34, 34, 34, .5);
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.team-card {
+    background: linear-gradient(to bottom, #5F672C 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 500px 500px 0 0;
+    text-align: center;
+    height: 100%;
+}
+
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.team-img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.team-img img {
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.team-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+}
+
+.team-info span {
+    font-size: 20px;
+    color: rgb(34, 34, 34, .7);
+    font-style: italic;
+}
+
+.team-swiper-pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.team-swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #5F672C;
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.team-swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 24px;
+    border-radius: 4px;
 }
