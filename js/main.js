@@ -213,3 +213,82 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+  // --- Scroll Animations (Intersection Observer) ---
+  const scrollElements = document.querySelectorAll(".animate-on-scroll");
+
+  if (scrollElements.length > 0) {
+    const elementInView = (el, percentageScroll = 100) => {
+      const elementTop = el.getBoundingClientRect().top;
+      return (
+        elementTop <= 
+        ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100))
+      );
+    };
+
+    const displayScrollElement = (element) => {
+      element.classList.add("is-visible");
+    };
+
+    // Using Intersection Observer for better performance if supported
+    if ("IntersectionObserver" in window) {
+      const scrollObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              displayScrollElement(entry.target);
+              observer.unobserve(entry.target); // Only animate once
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 0.15, // Trigger when 15% of the element is visible
+          rootMargin: "0px 0px -50px 0px"
+        }
+      );
+
+      scrollElements.forEach((el) => {
+        scrollObserver.observe(el);
+      });
+    } else {
+      // Fallback for older browsers
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el, 90)) {
+            displayScrollElement(el);
+          }
+        });
+      };
+      
+      // Check on load
+      handleScrollAnimation();
+      
+      window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+      });
+    }
+  }
+
+
+  // --- Scroll to Top Button Logic ---
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+
+  if (scrollToTopBtn) {
+    window.addEventListener("scroll", () => {
+      // Show button if scrolled down more than 300px
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add("show");
+      } else {
+        scrollToTopBtn.classList.remove("show");
+      }
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+
