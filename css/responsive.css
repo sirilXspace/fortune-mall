@@ -25,7 +25,8 @@
     }
 
     .team-header p,
-    .team-info span {
+    .team-info span,
+    .projects-title-area p {
         font-size: 18px;
     }
 }
@@ -238,12 +239,27 @@
 
     .team-header p,
     .team-info span,
-    .award-desc {
+    .award-desc,
+    .projects-title-area p {
         font-size: 14px;
     }
 
     .achievement-swiper-pagination {
         margin-top: 20px;
+    }
+
+    .projects-header {
+        margin-bottom: 30px;
+    }
+
+    .projects-button-prev,
+    .projects-button-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .project-info h4 {
+        font-size: 18px;
     }
 }
 
@@ -425,7 +441,7 @@
 
     .achievement-item {
         gap: 20px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 
     .award-badge {
@@ -434,15 +450,54 @@
 
     .award-title {
         font-size: 14px;
-        margin-bottom:7px;
+        margin-bottom: 7px;
     }
-.team-header p, .team-info span{font-size:13px;}
+
+    .team-header p,
+    .team-info span {
+        font-size: 13px;
+    }
+
     .award-desc {
         font-size: 12px
     }
-    .team-header{margin-bottom:25px;}
-    .section-description{font-size:13px;}
-    .section-subtitle{font-size:14px;}
+
+    .team-header {
+        margin-bottom: 25px;
+    }
+
+    .section-description {
+        font-size: 13px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .projects-button-prev,
+    .projects-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-info h4 {
+        font-size: 17px;
+    }
+
+    .projects-title-area p {
+        font-size: 13px;
+    }
+
+    .project-info h4 {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -489,4 +544,10 @@
     .stat-box h4 {
         margin-bottom: 10px;
     }
+
+    .project-info h4 {
+        font-size: 14px;
+    }
+    .project-info span{font-size:13px;}
+    .project-img{margin-bottom:10px;}
 }

@@ -462,7 +462,7 @@ ul {
 .co-founder-text .desc-text p {
     font-size: 18px;
     color: #333333;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 25px;
     font-weight: 400;
 }
@@ -790,3 +790,109 @@ ul {
     width: 24px;
     border-radius: 4px;
 }
+
+/* Upcoming Projects Section */
+.upcoming-projects {
+    background-color: #ffffff;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.projects-title-area {
+    max-width: 800px;
+}
+
+.projects-title-area h2 {
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.projects-title-area p {
+    color: rgba(34, 34, 34, .5);
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.projects-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0px; /* Alignment with text */
+}
+
+.projects-button-prev,
+.projects-button-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e6e7de; /* subtle greenish/beige */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #5F672C;
+}
+
+.projects-button-prev:hover,
+.projects-button-next:hover {
+    background-color: #5F672C;
+    color: #ffffff;
+}
+
+.projects-button-prev.swiper-button-disabled,
+.projects-button-next.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f0f1ea;
+    color: rgba(95, 103, 44, 0.5);
+}
+
+.projects-button-prev svg,
+.projects-button-next svg {
+    width: 20px;
+    height: 20px;
+}
+
+.projects-swiper {
+    padding-bottom: 0px;
+}
+
+.project-card {
+    /* Base style */
+}
+
+.project-img {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.05);
+}
+
+.project-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5F672C;
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+}
+
+.project-info span {
+    font-size: 14px;
+    color: rgba(34, 34, 34, .5);
+}
+.upcoming-projects .default-heading{padding-left:0px}
