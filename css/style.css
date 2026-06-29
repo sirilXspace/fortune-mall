@@ -333,6 +333,7 @@ ul {
 .section-subtitle {
     color: #718355;
     font-size: 16px;
+    line-height: 16px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -563,7 +564,7 @@ ul {
 .team-header {
     text-align: center;
     margin-bottom: 50px;
-    max-width: 700px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -575,7 +576,7 @@ ul {
 
 .team-header p {
     color: rgba(34, 34, 34, .5);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8;
 }
 
@@ -636,6 +637,155 @@ ul {
 }
 
 .team-swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Alumni Section */
+.alumni-section {
+    background-color: #F3F4F6;
+}
+
+.alumni-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.alumni-card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+
+.alumni-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    text-align: left;
+}
+
+.alumni-info h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-family: var(--font-heading);
+}
+
+.alumni-info span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.achievement-milestones {
+    background-color: #111111;
+}
+
+.achievement-milestones .section-subtitle {
+    color: #EDAE02;
+}
+
+.achievement-milestones .section-title {
+    color: #ffffff;
+}
+
+.achievement-milestones .section-description {
+    color: rgba(255, 255, 255, .5);
+}
+
+.achievement-header {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.achievement-swiper {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.achievement-item:last-child {
+    margin-bottom: 0;
+}
+
+.award-badge {
+    width: 260px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.award-badge img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.award-details {
+    flex-grow: 1;
+    position: relative;
+    padding-left: 80px;
+}
+
+.award-details::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: #EDAE02;
+}
+
+.award-title {
+    color: #EDAE02;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: var(--font-heading);
+}
+
+.award-desc {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.achievement-swiper-pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.achievement-swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #EDAE02;
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.achievement-swiper-pagination .swiper-pagination-bullet-active {
     opacity: 1;
     width: 24px;
     border-radius: 4px;

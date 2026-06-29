@@ -115,5 +115,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+
+        const alumniSwiper = new Swiper('.alumni-swiper', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: {
+                el: '.alumni-swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                }
+            }
+        });
+
+        const achievementSwiper = new Swiper('.achievement-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.achievement-swiper-pagination',
+                clickable: true,
+            },
+            // autoplay: {
+            //     delay: 4000,
+            //     disableOnInteraction: false,
+            // },
+        });
     }
 });
