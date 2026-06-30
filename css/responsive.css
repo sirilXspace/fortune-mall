@@ -1,3 +1,9 @@
+@media(min-width:1200px) {
+    .header-inner .nav-menu a {
+        color: #333333;
+    }
+}
+
 @media (max-width: 1400px) {
     .co-founder-text .desc-text p {
         font-size: 16px;
@@ -39,7 +45,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .hero-text h1 {
         font-size: 70px;
     }
@@ -86,6 +92,8 @@
     .footer-links li {
         margin-bottom: 10px;
     }
+    .news-details h1{font-size:28px;line-height:38px;}
+    .news-details h4, .news-section h4{font-size:22px;}
 }
 
 @media (max-width: 1199px) {
@@ -732,7 +740,8 @@
         padding: 5px 0
     }
 
-    .news-section {
+    .news-section,
+    .news-details {
         padding: 30px 0;
     }
 
@@ -756,7 +765,29 @@
     .news-card-title {
         margin-bottom: 5px;
     }
-    .news-grid{gap:15px;}
+
+    .news-grid {
+        gap: 15px;
+    }
+
+    .back a {
+        font-size: 14px;
+    }
+
+    .news-details h1 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .news-details p {
+        font-size: 14px;
+    }
+
+    .news-details h4,
+    .news-section h4 {
+        font-size: 22px;
+    }
 
 }
 
