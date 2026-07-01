@@ -36,11 +36,11 @@
         font-size: 18px;
     }
 
-    .news-hero-title {
+    .inner-banner-title {
         font-size: 60px;
     }
 
-    .news-hero-subtitle {
+    .inner-banner-subtitle {
         font-size: 20px;
     }
 }
@@ -92,8 +92,16 @@
     .footer-links li {
         margin-bottom: 10px;
     }
-    .news-details h1{font-size:28px;line-height:38px;}
-    .news-details h4, .news-section h4{font-size:22px;}
+
+    .news-details h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .news-details h4,
+    .news-section h4 {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -364,12 +372,30 @@
         width: calc((100% - 20px) / 2);
     }
 
-    .news-hero-title {
+    .inner-banner-title {
         font-size: 50px;
     }
 
-    .news-hero {
+    .inner-banner {
         padding: 120px 0 80px;
+    }
+}
+
+
+
+/* Gallery Responsive */
+@media (max-width: 991px) {
+    .gallery-grid {
+        gap: 20px;
+    }
+
+    .gallery-item {
+        width: calc((100% - 40px) / 3);
+    }
+
+    /* Reset stagger — on 2-col layout nth+2 is now right column, not center */
+    .gallery-item:nth-child(3n+2) {
+        margin-top: 30px;
     }
 }
 
@@ -716,15 +742,15 @@
         width: 100%;
     }
 
-    .news-hero-title {
+    .inner-banner-title {
         font-size: 35px;
     }
 
-    .news-hero-subtitle {
+    .inner-banner-subtitle {
         font-size: 18px;
     }
 
-    .news-hero {
+    .inner-banner {
         padding: 100px 0 60px;
     }
 
@@ -732,7 +758,7 @@
         font-size: 18px;
     }
 
-    .news-hero-desc {
+    .inner-banner-desc {
         font-size: 14px;
     }
 
@@ -789,6 +815,43 @@
         font-size: 22px;
     }
 
+}
+
+@media (max-width: 575px) {
+    .gallery-item {
+        width: 100%;
+    }
+
+    
+    .gallery-item:nth-child(2n) {
+        margin-top: 15px;
+    }
+
+    .gallery-section {
+        padding: 30px 0;
+    }
+
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .gallery-item {
+        width: calc((100% - 20px) / 2);
+    }
+
+    /* Reset stagger — on 2-col layout nth+2 is now right column, not center */
+    .gallery-item:nth-child(2n+1) {
+        margin-top: 0px;
+    }
+
+    .gallery-load-more {
+        margin-top: 30px
+    }
+
+    .btn-load-more {
+        font-size: 14px;
+        padding: 6px 18px
+    }
 }
 
 @media (max-width: 480px) {
