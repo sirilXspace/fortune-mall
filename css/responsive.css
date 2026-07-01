@@ -43,6 +43,10 @@
     .inner-banner-subtitle {
         font-size: 20px;
     }
+
+    .careers-intro .desc-col {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -101,6 +105,40 @@
     .news-details h4,
     .news-section h4 {
         font-size: 22px;
+    }
+
+    .careers-intro .join-label {
+        font-size: 20px;
+    }
+
+    .job-meta-tags .tag {
+        font-size: 14px;
+    }
+
+
+    .job-card.open .job-header {
+        padding: 20px 20px 0px
+    }
+
+    .job-header {
+        padding: 20px 20px;
+        flex-wrap: wrap;
+    }
+
+    .job-body {
+        padding: 0px 20px 20px
+    }
+
+    .job-header-left {
+        flex: 0 0 100%;
+    }
+
+    .job-header-left h3 {
+        font-size: 18px;
+    }
+
+    .job-header-left .job-preview {
+        line-height: 1.4;
     }
 }
 
@@ -378,6 +416,57 @@
 
     .inner-banner {
         padding: 120px 0 80px;
+    }
+
+    .careers-intro-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .careers-intro-left,
+    .careers-intro-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .careers-intro .desc-col {
+        text-align: left;
+    }
+
+    .ab-about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ab-about-img-col {
+        grid-column: span 2;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .ab-img-short {
+        flex: 1;
+    }
+
+    .ab-visitor-badge {
+        flex: 1;
+    }
+
+    .ab-foundation-grid {
+        flex-wrap: wrap;
+    }
+
+    .ab-foundation-grid .ab-foundation-card {
+        flex: 1 1 calc(50% - 15px);
+    }
+
+    .ab-business-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ab-section-heading,
+    .ab-section-heading-plain {
+        font-size: 36px;
     }
 }
 
@@ -815,6 +904,54 @@
         font-size: 22px;
     }
 
+    .careers-page {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .careers-intro .join-label img {
+        width: 70px;
+    }
+
+    .careers-intro .desc-col {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .careers-filter-wrap {
+        margin: 20px 0 0;
+    }
+
+    .ab-about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ab-about-img-col {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .ab-foundation-grid .ab-foundation-card {
+        flex: 1 1 100%;
+    }
+
+    .ab-business-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ab-section-heading,
+    .ab-section-heading-plain {
+        font-size: 28px;
+    }
+
+    .about-video-wrapper {
+        max-height: 350px;
+    }
+
+    .about-video {
+        max-height: 350px;
+    }
+    .ab-about-header p{font-size:14px;}
 }
 
 @media (max-width: 575px) {
@@ -822,7 +959,7 @@
         width: 100%;
     }
 
-    
+
     .gallery-item:nth-child(2n) {
         margin-top: 15px;
     }
@@ -852,6 +989,11 @@
         font-size: 14px;
         padding: 6px 18px
     }
+    .ab-about-header{margin-bottom:30px;}
+    .ab-visitor-badge p{font-size:14px;}
+    .ab-visitor-thumbs img{width:100px;}
+    .ab-visitor-badge{gap:15px;}
+    .ab-foundation-header{margin-bottom:30px;}
 }
 
 @media (max-width: 480px) {
@@ -927,5 +1069,14 @@
 
     .news-card-title {
         font-size: 16px;
+    }
+
+    .ab-foundation-card {
+        padding: 25px 20px;
+    }
+
+    .ab-section-heading,
+    .ab-section-heading-plain {
+        font-size: 24px;
     }
 }
