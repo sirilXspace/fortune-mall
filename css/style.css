@@ -619,7 +619,7 @@ ul {
 }
 
 .team-info span {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(34, 34, 34, .7);
     font-style: italic;
 }
@@ -1328,10 +1328,15 @@ ul {
 }
 
 .ab-about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 20px;
     align-items: stretch;
+}
+
+.ab-about-grid > * {
+    flex: 1;
+    min-width: 0;
 }
 
 .ab-about-img img {
@@ -1347,7 +1352,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    height: 100%;
 }
 
 .ab-img-short {
@@ -1372,6 +1376,7 @@ ul {
     display:flex;
     gap:30px;
     flex-direction: column;
+    height:100%;
 }
 
 .ab-visitor-badge .ab-top {
@@ -2232,3 +2237,5 @@ ul {
     cursor: not-allowed;
     transform: none;
 }
+.ab-visitor-badge p{font-size:14px;}
+.ab-foundation-header .default-heading{padding-left:0px;}
